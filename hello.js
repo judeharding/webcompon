@@ -31,8 +31,8 @@ class Test extends HTMLElement {
 
 	//method
 	dosomething() {
-		console.log("hello from function");
-		document.querySelector("#hellodiv").innerHTML = "hello from function";
+		console.log("hello from button function");
+		document.querySelector("#hellodiv").innerHTML = "hello from button function";
 	}
 }
 
