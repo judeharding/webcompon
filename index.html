@@ -10,15 +10,18 @@
 			}
 		</style>
 	</head>
+
 	<body>
-		<h1>Web Components</h1>
+		<h1>Web Components (h1 on the html file)</h1>
 
 		<!-- simplecustom web component  -->
-		<my-compa></my-compa>
-		<!-- THIS gets added later<my-compb></my-compb> -->
+		<div id="myouterwebcomponent">
+			<my-compa id="jude"></my-compa>
+			<hr />
+		</div>
+
+		<!-- scripts for web components -->
+		<script src="./indexa.js"></script>
+		<script src="./indexb.js"></script>
 	</body>
 </html>
-
-<!-- scripts for web components  AND THESE GET MOVED TO THE BOTTOM OF THE BODY DURING RUN TIME -->
-<script src="./indexa.js"></script>
-<script src="./indexb.js"></script>
