@@ -24,7 +24,6 @@ customElements.define("my-compb", MyComponB);
 function dosomethingELSE() {
 	console.log("hello from function dosomethingcomponB ");
 
-	// document.querySelector("#myouterwebcomponent").innerHTML = "";
 	document.querySelector("#mike").remove();
 
 	let myparent = document.querySelector("#myouterwebcomponent");
@@ -32,9 +31,7 @@ function dosomethingELSE() {
 	const newDiv = document.createElement("my-compa");
 
 	newDiv.setAttribute("id", "jude");
-	myparent.prepend(newDiv);
-
-	// document.querySelector("compBdiv").remove();
+	myparent.append(newDiv);
 }
 
 function registerBtnCompB() {

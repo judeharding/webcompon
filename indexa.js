@@ -31,7 +31,7 @@ function dosomething() {
 
 	const newDiv = document.createElement("my-compb"); // WORKING
 	newDiv.setAttribute("id", "mike"); // WORKING
-	parentele.prepend(newDiv); // WORKING
+	parentele.append(newDiv); // WORKING
 
 	// document.getElementById("compAdiv").remove(); //  WORKING
 	// document.getElementById("my-compa").remove(); // NOT WORKING
