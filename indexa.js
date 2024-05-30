@@ -32,18 +32,6 @@ function dosomething() {
 	const newDiv = document.createElement("my-compb"); // WORKING
 	newDiv.setAttribute("id", "mike"); // WORKING
 	parentele.append(newDiv); // WORKING
-
-	// document.getElementById("compAdiv").remove(); //  WORKING
-	// document.getElementById("my-compa").remove(); // NOT WORKING
-
-	// // Reference to the parent element containing the web component
-	// const parentElement = document.getElementById("myouterwebcomponent");
-
-	// // Reference to the web component itself
-	// const webComponent = document.getElementById("my-compa");
-
-	// // Remove the web component from the parent element
-	// parentElement.removeChild(webComponent);
 }
 
 function registerBtnCompA() {
@@ -51,3 +39,40 @@ function registerBtnCompA() {
 }
 
 // ---
+
+customElements.define(
+	"wc-count",
+	class extends HTMLElement {
+		/**
+		 * The class constructor object
+		 */
+		constructor() {
+			// Always call super first in constructor
+			super();
+
+			// Now we're in business!
+			// console.log(this);
+
+			// Instance properties
+			this.button = this.querySelector("button");
+			this.count = 0;
+
+			// Listen for click events
+			this.button.addEventListener("click", this);
+
+			// Announce UI updates
+			this.button.setAttribute("aria-live", "polite");
+		}
+
+		/**
+		 * Handle events
+		 * @param  {Event} event The event object
+		 */
+		handleEvent(event) {
+			console.log("clicked!", this); // WORKING
+
+			this.count++;
+			this.button.textContent = `Clicked ${this.count} Times`;
+		}
+	}
+);
