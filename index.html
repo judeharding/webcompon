@@ -3,30 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Web Components TWO</title>
-		<style>
-			#compBdiv {
-				color: blue;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css" />
+		<!-- defer below will run AFTER html has been processed -->
+		<script src="script.js" defer></script>
+
+		<title>Testing Draggables</title>
 	</head>
-
 	<body>
-		<h1>Web Components (h1 on the html file)</h1>
-
-		<!-- simplecustom web component  -->
-		<div id="myouterwebcomponent">
-			<h2>hello from html</h2>
-			<my-compa id="jude"></my-compa>
-			<hr />
+		<h1>Testing Draggables</h1>
+		<div class="container">
+			<p class="draggable" draggable="true">1</p>
+			<p class="draggable" draggable="true">2</p>
 		</div>
 
-		<wc-count>
-			<button>Clicked 0 Times</button>
-		</wc-count>
-
-		<!-- scripts for web components -->
-		<script src="./indexa.js"></script>
-		<script src="./indexb.js"></script>
+		<div class="container">
+			<div class="draggable" draggable="true">3</div>
+			<div class="draggable" draggable="true">4</div>
+		</div>
 	</body>
 </html>
