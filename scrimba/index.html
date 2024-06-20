@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>scrimba</title>
+		<link rel="stylesheet" href="./scrimba/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Intro to the BOX model</h1>
+		</header>
+
+		<main>
+			<h2>Width and height</h2>
+			<p>All elements have a width and a height.</p>
+			<p>We can control the width and the height very easily, but be careful when setting heights on elements, it can get you in trouble!</p>
+			<p>try to avoid setting a HEIGHT property because css will shrink and grow depending on the content but if you set the height, you can get errors</p>
+			<p>
+				margins - just 1 attribute = all 4 sides, 2 attributes = top & bottom, 3 attributes = top, right & left, 4 attributs = trbl clockwise <br />
+				margins are outside the border
+			</p>
+			<p>padding is the same as margins but is INSIDE the border -- it really adds more background of the element</p>
+		</main>
+
+		<hr />
+		<section>
+			<div class="content-flow">
+				<h1 class="title">Even Columns</h1>
+				<div class="even-columns">
+					<div class="col"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+			</div>
+			<div class="content-flow">
+				<h1 class="title">Grid-ish</h1>
+				<div class="grid-ish">
+					<div class="col"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+			</div>
+			<div class="content-flow">
+				<h1 class="title">Content and Sidebar</h1>
+				<div class="content-sidebar">
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>the box model</p>
+		</footer>
+	</body>
+</html>
+
+<!-- ----------
+<h2>wip scrimba https://v2.scrimba.com/html-css-crash-course-c02l</h2>
+
+<p id="p1" class="p2">hello testing colors on classes vs id's</p>
+
+<p>a class and id on the same element - the attributes of the id will overwrite the attributes of a class</p>
+
+<p>6 LAYOUT tags - header, main, section, footer div and nav</p> -->
